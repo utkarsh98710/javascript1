@@ -1,1 +1,1 @@
-We  learn about Variables in javascript
+Repository for javascript notes
