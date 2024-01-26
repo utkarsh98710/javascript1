@@ -1,4 +1,4 @@
-"use strict"; // treat all js code as newer version (use new syntax)
+ "use strict"; // treat all js code as newer version (use new syntax)
 
 // alert( 3 + 3 ) we are using nodejs, not browser; it give error
 
@@ -6,6 +6,7 @@ console.log(3
     +3) //code readability should be high
 console.log("Utkarsh")
 
+console.log("Utkarsh");
 // "use strict";
 // let public = 1500; cause error because public if future variable
 
