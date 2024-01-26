@@ -6,7 +6,7 @@ console.log(3
     +3) //code readability should be high
 console.log("Utkarsh")
 
-console.log("Utkarsh");
+
 // "use strict";
 // let public = 1500; cause error because public if future variable
 
@@ -24,7 +24,7 @@ let state //this is eg of undefined
 //symbol ==> to find uniqueness 
 
 //non-primitive datatype
-//obeject
+//object
 
 console.log(typeof "Utkarsh");
 console.log(typeof age);
