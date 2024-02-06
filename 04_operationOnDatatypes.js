@@ -30,7 +30,8 @@ console.log(+"");
 
 
 let num1, num2, num3
-num1 = num2 = nums3 = 2+2 // less readiablity
+num1 = num2 = num3 = 2+2 // less readiablity
+console.log(num1,num2,num3);
 
 //increament operator
 let gameCounter = 100

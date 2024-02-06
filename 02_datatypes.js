@@ -28,5 +28,5 @@ let state //this is eg of undefined
 
 console.log(typeof "Utkarsh");
 console.log(typeof age);
-console.log(typeof null); // it is obeject
+console.log(typeof null); // it is object
 console.log(typeof undefined); //it is undefined

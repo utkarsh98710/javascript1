@@ -46,5 +46,5 @@ console.log(booleanisLoggedOut);  //output is true
 
 let someNumber = 33
 let stringnumber = String(someNumber)
-console.log(number);
+console.log(someNumber);
 console.log(typeof stringnumber);

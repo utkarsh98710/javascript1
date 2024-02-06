@@ -26,5 +26,6 @@ console.log(undefined ==0); //false
 console.log(undefined >0); //false
 console.log(undefined <0); //false
 
-// === it is known as strictly check datatypes ko bhi check karta he
-console.log("2" ===2 );
+// === it is known as strictly check -> datatypes ko bhi check karta he
+console.log("2" ===2 ); //not same because datatype alag he
+
