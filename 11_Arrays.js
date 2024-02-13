@@ -46,3 +46,4 @@ console.log("B", myArr); //same to the original array
 const myn2 = myArr.splice(1,3)
 console.log(myn2);
 console.log("c",myArr); // not equal to the original array.
+//the splice part is remove from the original array.
