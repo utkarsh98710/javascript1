@@ -21,7 +21,7 @@ console.log(jsUser.email);
 // console.log(jsUser[email]); error
 // console.log(jsUser.Full name); error
 console.log(jsUser["Full name"]);
-console.log(jsUser.mySym); //****it print mykey1 but datatype is not used as symbol****. 
+console.log(jsUser.mySym); //****it print mykey1 but datatype is not used as symbol****. it give undefined.
 console.log(typeof jsUser.mySym); //it print string but we want its datatypes as symbol square brackets
 
 //*****One way to use as symbol of my variable. use square brackets****
@@ -58,6 +58,6 @@ jsUser.greetingtwo = function(){
 console.log(jsUser.greeting());
 console.log(jsUser.greetingtwo());
 
-
+// Note: most of the value is access by . but some of them acces by [ ]
 
 
