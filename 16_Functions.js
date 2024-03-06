@@ -12,7 +12,6 @@ sayMyName()
 
 //Write a function to add two numbers.
 
-
 // function addTwoNumbers1(number1,number2){  // function input time me jo bhi aata he use parameter 
 //     console.log(number1 + number2); 
 // }
