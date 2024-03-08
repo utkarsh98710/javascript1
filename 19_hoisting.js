@@ -1,3 +1,5 @@
+// scope local and global scope
+
 function one(){
     const username = "Utkarsh" 
 
@@ -33,7 +35,7 @@ function addone(num){
 addone(2) //isse bss return hota print nahi hota
 
 
-//
+// declare se pehle use nahi karna he.  
 // addTwo(5) //this give error two. declariation se pehle acces kar rahe he . 
 const addTwo = function(num){ // this is function two ..yaha variable dene ke sath variable me hold bhi kar dia he
     return num+2
