@@ -64,5 +64,6 @@ console.log((addTwo2(3,4)));
 console.log((addTwo3(3,4))); // undefined because object ko return karne ke liye parenthesis me band karo.
 console.log((addTwo4(3,4)));
 
-const myArray = [2,5,7,1,3]
-myArray.forEach()
+
+// const myArray = [2,5,7,1,3]
+// myArray.forEach()
