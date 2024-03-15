@@ -30,3 +30,4 @@ console.log(typeof "Utkarsh");
 console.log(typeof age);
 console.log(typeof null); // it is object
 console.log(typeof undefined); //it is undefined
+

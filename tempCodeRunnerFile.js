@@ -1,1 +1,1 @@
-Utkarsh
+console.log(`user power: ${power}`);
