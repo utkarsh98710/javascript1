@@ -1,1 +1,1 @@
-console.log(`user power: ${power}`);
+val1 = null ?? 10
