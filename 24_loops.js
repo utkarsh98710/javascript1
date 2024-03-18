@@ -42,7 +42,7 @@
 //continue
 for (let index = 1; index <= 20; index++) {
     if (index == 5) {  // we want as 5 number detect we not want to print 
-        console.log(`Detected 5`);
+        console.log(`Detected 5`);  // 5 will not print 
         continue
     }
     console.log(`value of i is ${index}`);
