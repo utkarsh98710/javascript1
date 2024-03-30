@@ -16,7 +16,7 @@ const myNums1 = [1,2,3,4,5,6,7,8,9,10]
 //   newNums ke andar values store kar rahe he  //below is arrow function
 
 //filter method 
-// const newNums  = myNums.filter( (num) =>{
+// const newNums  = myNums1.filter( (num) =>{
 //    return num >4 // if we not write written it will print []
 // })
 
