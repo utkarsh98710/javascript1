@@ -4,7 +4,6 @@ console.log(2>=1);
 console.log(2<1);
 console.log(2==1);
 console.log(2!=1);
-
 // compare two differet datatypes
 console.log("2">1);
 console.log("02">1);

@@ -32,12 +32,13 @@ let myObj = {    //curly bracket me jo bhi he vo object he
 }
 
 //declare a function
-const myFunction = function(){
+const myFunction = function(){ // iska return type object ata he but isme function show hora but object function he 
     console.log("Hi Utkarsh"); 
 }
 
 //how to find a datatype 
 console.log(typeof bigNumber);
+console.log(typeof userEmail);
 console.log(typeof outsideTemp);  // this is object datatypes
 console.log(typeof scoreValue);
 console.log(typeof heros);
