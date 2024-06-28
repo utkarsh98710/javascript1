@@ -18,7 +18,7 @@
 //     //but if we use var keyword = power also defined outside the bracket but this is good error so we use const or let keyword*/
 //     console.log(`user power: ${power}`);
 // }
-// show error
+// // show error
 // console.log(`user power: ${power}`);
 
 
@@ -26,7 +26,7 @@
 // const balance = 1000;
 // if (balance>500) console.log("test"), console.log("test2");
 
-//**nested if**
+// // **nested if**
 // if(balance<500){
 //     console.log("less than");
 // }else if (balance<750){
@@ -38,16 +38,16 @@
 // }
 
 
-// const userLoggedIn = true
-// const debitCard = true
-// const loggedInFromGoogle = false
-// const loggedInFromEmail = true
-// if (userLoggedIn && debitCard && 2==3) {
-//     console.log("Allow to buy course");
-// }
-// if(loggedInFromGoogle || loggedInFromEmail){
-//     console.log("User logged in");
-// }
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+if (userLoggedIn && debitCard && 2==3) {
+    console.log("Allow to buy course");
+}
+if(loggedInFromGoogle || loggedInFromEmail){
+    console.log("User logged in");
+}
 
 
 // switch key

@@ -59,4 +59,4 @@ console.log(Math.floor(Math.random()*10)+1);
 //trick for min and max
 const min= 20
 const max=50
-console.log(Math.floor(Math.random()*(max-min+1))+min);
+console.log(Math.floor(Math.random()*(max-min+1))+min); 

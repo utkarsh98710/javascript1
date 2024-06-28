@@ -5,15 +5,15 @@
 //     index = index+2;
 // }
 
-let myArray = ['flash','batman', "superman"]
-let arr=0
-while (arr<myArray.length) {
-    console.log(`value is ${myArray[arr]}`);
-    arr=arr+1
-}
+// let myArray = ['flash','batman', "superman"]
+// let arr=0
+// while (arr<myArray.length) {
+//     console.log(`value is ${myArray[arr]}`);
+//     arr=arr+1
+// }
 
 // do-while loop
-let score = 11
+let score = 1 // if score is 11 then only 11 is print
 do {
     console.log(`Score is ${score}`);
     score++;

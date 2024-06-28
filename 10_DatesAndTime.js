@@ -54,7 +54,7 @@ console.log(newDate.getDay());
 //first we choose interlisation which we want and write in string format
 //***//all property shown us by clcking ctrl+space in between {}
 newDate.toLocaleString('default',{
-     weekday: "long",
+     weekday: "long"
      //add many parameters...
 })
 
