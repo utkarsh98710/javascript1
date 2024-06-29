@@ -31,6 +31,7 @@ const obj4 ={5:"a",6:"b"}
 //const obj4 = { obj1,obj2}
 
 //(method-2)
+// const obj5= Object.assign(obj1,obj2,obj4)
 // const obj3 = Object.assign({},obj1,obj2,obj4) //empty object is given
 
 // **** (easy) (method-3) use spread object to assign a object

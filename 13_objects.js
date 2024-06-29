@@ -10,7 +10,7 @@ const mySym = Symbol("key1")
 const jsUser = {
     name: "Utkarsh",
     "Full name": "Ukarsh Gupta", // not possible to access this value we use this by square brackets.
-    [mySym]: "mykey1",
+    [mySym]: "mykey1", // if we want to show this as symbol use square bracket
     age:19,
     location:"Delhi",
     email:"utkarshgupta@gmail.com",
@@ -20,6 +20,7 @@ const jsUser = {
 console.log(jsUser.email);
 // console.log(jsUser[email]); error
 // console.log(jsUser.Full name); error
+console.log(jsUser["email"]);
 console.log(jsUser["Full name"]);
 console.log(jsUser.mySym); //****it print mykey1 but datatype is not used as symbol****. it give undefined.
 console.log(typeof jsUser.mySym); //it print string but we want its datatypes as symbol square brackets
@@ -50,12 +51,13 @@ jsUser.greeting = function(){
     console.log("Hello JS User");
 }
 
+
 // we want to reference name in this object. so we convert this into backticks first
 jsUser.greetingtwo = function(){
     console.log(`Hello JS User, ${this.name}`);
 }
 
-console.log(jsUser.greeting());
+console.log(jsUser.greeting()); // undefined
 console.log(jsUser.greetingtwo());
 
 // Note: most of the value is access by . but some of them acces by [ ]

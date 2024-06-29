@@ -42,7 +42,7 @@ const myObj= {
     'game1': 'NFS',
     'game2': 'Spiderman'
 }
-// for (const [key, value] of myObj) { // myObj is not iterable by normal way but map function are iterable
+// for (const [key, value] of myObj) { // myObj is not iterable by normal way 
 //     // console.log(key, ':-',value);
 // }
 
