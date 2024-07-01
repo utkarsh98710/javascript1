@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in web development</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    
+    <!-- IMPORTANT THING  -->
+     <!-- jo maine ye comment likhe he nodelist vo bhi count huye he  -->
+
+
+    <!-- here only one line break will count after that we give any line break browser will node count // so the value of nodelist remain same  -->
+    <div class="parent"> <!-- here text field value  in nodelist-->
+        <div class="day">Monday</div>  <!--here we give enter at the end so this will also count in nodelist -->
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+    </div>
+</body>
+
+<script>
+    // target one is select parent element and find what value it has
+    const parent= document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+
+
+    // direct html collection pe mahi chalega ye ek dikhne me array he to ispe for loop laga ke dekh lo
+    for (let i = 0; i < parent.children.length; i++) {
+        // console.log(parent.children[i].innerHTML); 
+    }
+
+    parent.children[1].style.color= "orange"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement); // here we move child to parent clss 
+    console.log(dayOne.nextElementSibling); // sibling of the child element
+
+    console.log("NODES: ", parent.childNodes);// nodelist print .. but in node list 9 element will print 
+
+
+
+</script>
+</html>
