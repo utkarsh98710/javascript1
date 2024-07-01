@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    
+</body>
+
+<script>
+    // how to create a new element in javascript
+    // how to add this data on page . now this all data will be in memory page par nahi he
+
+
+    const div = document.createElement('div')
+    console.log(div);
+    div.className= "main"
+    div.id=Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor= "greem"
+    div.style.padding="12px"
+
+    // div.innerText= "Dom Manipulation" we dont prefer this we create our own node
+    // this way but this is long way..
+    const addText= document.createTextNode("New Dom Manipulation")
+    div.appendChild(addText)
+
+        // iss child ko attach to karo page me **/*
+        
+        document.body.appendChild(div)
+
+        // note 
+
+        // agar ek baar ye div bana gaya he to isko function me rap kar sakte he 
+        // "create a new div"  uss function ko argument me pass kar sakte ho ki text kya dena he colour kya dena he or loop chala skate he
+
+
+
+
+</script>
+</html>
