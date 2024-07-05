@@ -51,4 +51,4 @@ function loginUserMessage(username="ram"){
 
 // loginUserMessage("Harsh") //this value doesn't print anything it will run only. 
 // console.log(loginUserMessage("Harsh"))
-console.log(loginUserMessage("Utkarsh")) // this will give smallest value ram if we dont give any parameter but if we give then it will overight given value.
+console.log(loginUserMessage("utkarsh")) // this will give smallest value ram if we dont give any parameter but if we give then it will overight given value.
