@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body style="background-color: black; color: bisque;">
+    <ul class="Language">
+        <li>javascript</li>
+    </ul>
+</body>
+
+ <!-- Target he hume ek or listitem add karna he  -- list item create karna he fir ul select karna he fir uss item ko append karna he  -->
+  <!-- many ways but here we desig n function -->
+<script>
+    function addLanguage(langName) {
+        const li =document.createElement('li');
+        li.innerHTML= `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+
+    // below method is optimised and use more in  big projects
+    function addOptionLanguage(langName) {
+        const li= document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptionalLanguage('golang')
+
+    // edit
+    const secondLang=document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML="css"; not better approach use append
+    const newli = document.createTextNode('li') // poora element bana ke dekh lia replace method
+    newli.textContent= "mojo"
+    secondLang.replaceWith(newli)
+
+    // edit -> first js ko typescript se change kar do
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>' // whole html will change
+
+
+  // remove --> remove golang
+  const lastLang=document.querySelector('li:last-child')
+  lastLang.remove()
+
+</script>
+</html>
