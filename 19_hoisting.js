@@ -4,7 +4,7 @@ function one(){
     const username = "Utkarsh" 
 
     function two(){
-        const website = "Youtube"
+        const website = "discord"
         console.log(username);
     }
     // console.log(website); not accesble
