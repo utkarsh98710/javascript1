@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: black; color: aqua;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="198px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li> <-- onclick="alert('owl')" -->
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // event invoke at some activity
+    // java script me jitne bhi events he vo sequentially runhote he 
+    //  document.getElementById('owl').onclick= function(){
+    //    alert("owl clicked")
+    //  }
+     
+     //attachEvent()
+     //jquery- on events method this also methods
+
+     // thia is best approach
+     // addEventListeners give more function than onclick so we use this
+    //  document.getElementById('owl').addEventListener('click', function(){
+    //     alert("owl clicked again")
+    //  })
+    
+     // Event bubbling 
+     // how to work on event wee edit above function --> event object e
+     document.getElementById('owl').addEventListener('click', function(e){
+       console.log(e,false);
+     })
+
+     // or ye upar wali statement alag tarike se bhi likh sakte he
+    //  console.log(e);
+    // }, false); false ki jagah true bhi rakh sakte he 
+
+     // ye jo upar function likha he vo hume vo hume bhot sare function jaise 
+     // type, timestamp, defaultPrevented--> jo bhi defalut behavior he tag ka vo rok sakte ho
+     // target,toElement, srcElement,currrentElement
+     // interview related-> clientX, clientY,screenx, screenY
+     // altKey,ctrlKey, shiftKey,KeyCode --> ye key click hue he ya nahi check trough events kewboard kitni he
+    
+
+
+    // event propogation --> main rule -->bubbling up -- inside se outside
+    ///??? yaha se false hata bhi sakte he defalut value false hoti he
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },false)  // this code will work when we click any elements of the ul
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked");
+    // },false)  // this code will work when we click owl image
+
+    // // Capturing mode pehle outside wala chalega --> top se bottom chalega pehle ul walaa chalega fir owl clicked
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },true)  // this code will work when we click any elements of the ul
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked");
+    //     // agar hum chahte he bubbling naho or innner element alag reh jaye or outer element alag ho jaye to ek method hota he 
+    //     e.stopPropagation() // when we click on owl only owl clicked will print bubble upar nahi gaya print hone 
+    // },true)  // this code will work when we click owl image
+    
+    // Preventdefault method 
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault()
+        // we dont want to bubbling up
+        e.stopPropagation()
+        console.log("google clicked"); // violation aayega tab google khulega
+    },false)
+
+    // Real world senerio -->
+    // If we click any of image the image then the will clear but hume bss iamge clear nahi karni pura li gayab karna he ..
+
+
+    // ek ek image ki id pe get element lagana to hard hoga hum direct uske parent par 
+    document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e.target);// give where this image come
+        console.log(e.target.parentNode);// target ka parent node chaiye tha li aayega har image ka4
+
+        // problem jaise kisi li pe click kar denge poora li gayab ho jayega
+        console.log(e.target.tagName) // jo image hongi uske liye img print karayega 
+        /// to hume bss iamges select karni he to condition lagayenge
+         if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+            // alag wala yaha se
+            let removeIt=e.target
+            removeIt.remove() // li pe click karenge to remove nahi hoga LI print kar dega agr image pe click karenge tab remove hogi
+         }
+        // isse bachne ke liye ham tag nam euse karte he 
+
+
+        // but if we want to remove it
+        // iss niche like hue 2 statements ko upar le gaye he condition me
+        // let removeIt=e.target.parentNode// give li
+        // removeIt.remove()  // problem jaise kisi li pe click kar denge poora li gayab ho jayega
+    },false)
+    // another way to remove li firstly parentNode give the ul and then we say to ul to remove it those child which we want to remove
+    //removeIt.parentNode.removeChild(removeIt)
+
+</script>
+</html>
