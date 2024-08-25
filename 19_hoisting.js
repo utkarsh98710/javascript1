@@ -9,7 +9,6 @@ function one(){
     }
     // console.log(website); not accesble
     
-     two()
 }
 // one()
 
